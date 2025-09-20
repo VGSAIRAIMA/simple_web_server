@@ -21,7 +21,8 @@ Serving the HTML pages.
 Testing the webserver.
 
 # PROGRAM:from http.server import HTTPServer,BaseHTTPRequestHandler
-content ='''
+content =
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -78,7 +79,8 @@ content ='''
 <a href="https://www.tutorialspoint.com/data_communication_computer_network/tcp_ip_model.htm">FOR MORE REFERENCE CLICK THE BELOW LINK</a>
 </div>
 </body>
-</html>'''
+</html>
+```
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
         print("Ger request received....")
@@ -90,6 +92,7 @@ print("THIS IS MY WEB SERVER")
 server_address=('',8000)
 httpd=HTTPServer(server_address,MyServer)
 httpd.serve_forever()
+
 # OUTPUT:
 ![ALT TEXT](<webserver1.png>)
 ![ALT TEXT](<webserver2.png>)
