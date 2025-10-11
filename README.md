@@ -22,6 +22,7 @@ Testing the webserver.
 
 # PROGRAM:from http.server import HTTPServer,BaseHTTPRequestHandler
 content =
+
 ```
 <!DOCTYPE html>
 <html>
@@ -80,7 +81,6 @@ content =
 </div>
 </body>
 </html>
-```
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
         print("Ger request received....")
@@ -93,6 +93,7 @@ server_address=('',8000)
 httpd=HTTPServer(server_address,MyServer)
 httpd.serve_forever()
 
+```
 # OUTPUT:
 ![ALT TEXT](<webserver1.png>)
 ![ALT TEXT](<webserver2.png>)
