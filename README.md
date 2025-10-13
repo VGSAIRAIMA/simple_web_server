@@ -97,6 +97,7 @@ httpd.serve_forever()
 # OUTPUT:
 ![ALT TEXT](<webserver1.png>)
 ![ALT TEXT](<webserver2.png>)
+![ALT TEXT](terminal.png)
 
 # RESULT:
 The program for implementing simple webserver is executed successfully.
